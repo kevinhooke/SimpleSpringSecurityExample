@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<link href="resources/css/bootstrap.css" rel="stylesheet"
+	type="text/css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h1>Spring Security Demo Logon</h1>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="span6">
+
+				<form action="j_spring_security_check" method="POST">
+					<div>
+						<label for="j_username">User Id</label> <input type="text"
+							id="j_username" name="j_username" />
+					</div>
+					<br />
+					<div>
+						<label for="j_password">Password</label><input type="password"
+							id="j_password" name="j_password" />
+					</div>
+					<br />
+					<div class="submit">
+						<input type="submit" class="btn btn-primary" value="Logon" />
+					</div>
+				</form>
+			</div>
+
+			<div class="span6">
+				
+				<p><b>To logon use one of the following user accounts:</b></p>
+				<ul>
+					<li>User Id: testuser, Password: password - this user has the
+						role ROLE_USER</li>
+					<li>User Id: testadmin, Password: password - this user has the
+						role ROLE_ADMIN</li>
+				</ul>
+			</div>
+		</div>
+
+		<br />
+
+	</div>
+</body>
+</html>
